@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alura.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <head>
+        <nav class="Box-Logo">
+            <div class="Corazones"><img src="Imagenes/image 1.svg" alt=""></div>
+            <div class="Logo"><img src="Imagenes/AluraGeek.svg" alt="Alura Geek"></div>
+        </nav>
+    </head>
+    <main class="Box-In">
+        <div class="Titulo"><h1>Agregar <br> Producto:</h1></div>
+        <form class="Box-Inputs" data-formulario>
+            <input type="text" required placeholder="nombre..." data-nombre >
+            <input type="text" required placeholder="precio..." data-precio>
+            <input type="text" required placeholder="imagen..." data-imagen>
+            <di class="Box-Botones">
+                <input class="Enviar" type="submit" value="Enviar">
+                <button>Limpiar</button>
+            </di>
+        </form>
+    </main>
+    <section class="Box-MainProductos">
+        <div class="Texto">
+            <p class="Texto1">MIS PRODUCTOS:</p>
+        </div>
+        <div class="Box-Productos">
+            <div class="Producto">
+                <ul class="lista-Productos" data-lista>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="Pie-Pagina">
+            <div class="Pie-Pag">
+                <img src="Imagenes/image 1.svg" alt="corazones">    
+                <img src="Imagenes/AluraGeek.svg" alt="Logo">
+            </div>
+            <div class="texto2">
+                <p class="texto3">DESARROLLADO POR HECTOR HERNANDEZ</p>
+                <p class="texto4">ALURA LATAM-2024</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/mostrarProductos.js" type="module" ></script>
+    <script src="/crearProducto.js" type="module"></script>
+</body>
+</html>

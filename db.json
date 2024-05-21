@@ -1,0 +1,40 @@
+{
+  "Productos": [
+    {
+      "id": "1",
+      "nombre": "Starwars",
+      "precio": "$ 60,00",
+      "imagen": "https://i0.wp.com/multigrabados.com/wp-content/uploads/StarWars-2.jpg?fit=481%2C641&ssl=1"
+    },
+    {
+      "id": "2",
+      "nombre": "StormTrooper",
+      "precio": "$ 60,00",
+      "imagen": "https://i.ibb.co/s1r06TR/image-2.png"
+    },
+    {
+      "id": "3",
+      "nombre": "Darth Vader",
+      "precio": "$ 100,00",
+      "imagen": "https://lob.com.mx/cdn/shop/files/Star-Wars-Darth-Vader-Lightsaber-Jumbo-Mug-With-Sound_1SHP2158_01_1300x1300.jpg?v=1700153365"
+    },
+    {
+      "id": "6189",
+      "nombre": "Casco Soldier",
+      "precio": "$ 125,00",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_959681-MLM42618143241_072020-O.webp"
+    },
+    {
+      "id": "a6e2",
+      "nombre": "Darth Vader",
+      "precio": "$ 175,00",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_694458-MLU73462441605_122023-F.webp"
+    },
+    {
+      "id": "829a",
+      "nombre": "StormTrooper",
+      "precio": "$ 126.00",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_749904-MLU75258492424_032024-F.webp"
+    }
+  ]
+}

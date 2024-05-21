@@ -1,0 +1,691 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template:
+    "nav" 70px
+    "form" 400px
+    "content" 700px
+    "footer" 150px/430px;
+}
+
+/*cabecera*/
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D04D9;
+    box-shadow: 0px 11px 0px 0px rgba(0,0,0,0.74);
+}
+
+/*Form*/
+
+main {
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.Box-Inputs {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+}
+
+input {
+    position: relative;
+    border-radius: 20px;
+    border: solid #03318C;
+    padding: 10px;
+    width: 80%;
+    height: 30px;
+}
+
+input::placeholder {
+    font-family: "IBM Plex Mono", monospace;
+    color: #03318C;
+}
+
+
+.Box-Botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+button {
+    width: 40%;
+    height: 150%;
+    border-radius: 10px;
+    border: solid #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    cursor: pointer;
+    color: #03318C;
+}
+
+.Enviar {
+    width: 40%;
+    height: 150%;
+    border-radius: 10px;
+    border: solid #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    cursor: pointer;
+    color: #03318C;
+}
+
+button:hover {
+    background-color: #03318C;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+/*Productos*/
+
+section {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Box-Productos {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    gap: 10px;
+}
+
+.Texto1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 35px 0 0 0;
+}
+
+.Producto {
+    width: 100%;
+    height: 100%;
+}
+
+.lista-Productos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.Producto-Item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+.Productos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: #5D04D9;
+    box-shadow: -8px 10px 3px -3px rgba(0,0,0,0.35);
+    border: solid black;
+    border-radius: 23px;
+    width: 150px;
+    height: 170px;
+}
+
+.Box-Name {
+    width: 90%;
+}
+
+.Nombre {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: white;
+    align-items: start;
+}
+
+.Pro-imagen {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    border-radius: 13px;
+}
+
+.Precio {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: white;
+}
+
+.Box-Precio .Icono {
+    width: 20px;
+}
+
+
+.Box-Precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+
+
+
+/*Pie de pagina*/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5D04D9;
+}
+
+.Pie-Pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400px;
+}
+
+.texto4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200px;
+}
+
+/* Tablet */
+
+@media (min-width: 435px) and (max-width: 800px) {
+    body {
+        display: grid;
+        grid-template:
+        "nav nav" 70px
+        "content form" 700px
+        "footer footer" 150px/400px 400px;
+    }
+    
+    /*cabecera*/
+    
+    nav {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5D04D9;
+        box-shadow: 0px 11px 0px 0px rgba(0,0,0,0.74);
+    }
+    
+    /*Form*/
+    
+    main {
+        grid-area: form;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        gap: 70px;
+    }
+    
+    h1 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+    
+    .Box-Inputs {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 80%;
+        height: 80%;
+    }
+
+    input {
+        position: relative;
+        border-radius: 20px;
+        border: solid #03318C;
+        padding: 10px;
+        width: 80%;
+        height: 30px;
+    }
+
+    input::placeholder {
+        font-family: "IBM Plex Mono", monospace;
+        color: #03318C;
+    }
+    
+    
+    .Box-Botones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    
+    button {
+        width: 40%;
+        height: 150%;
+        border-radius: 10px;
+        border: solid #03318C;
+        font-family: "IBM Plex Mono", monospace;
+        cursor: pointer;
+        color: #03318C;
+    }
+
+    .Enviar {
+        width: 40%;
+        height: 150%;
+        border-radius: 10px;
+        border: solid #03318C;
+        font-family: "IBM Plex Mono", monospace;
+        cursor: pointer;
+        color: #03318C;
+    }
+    
+    button:hover {
+        background-color: #03318C;
+        color: white;
+        transition: background-color 0.5s;
+    }
+    
+    /*Productos*/
+    
+    section {
+        grid-area: content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .Box-Productos {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Texto1 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin: 15px 0 0 0;
+    }
+    
+    .Producto {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lista-Productos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        scroll-behavior: smooth;
+    }
+    
+    .Producto-Item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        
+    }
+
+    .Productos {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        background-color: #5D04D9;
+        box-shadow: -8px 10px 3px -3px rgba(0,0,0,0.35);
+        border: solid black;
+        border-radius: 23px;
+        width: 150px;
+        height: 200px;
+    }
+
+    .Box-Name {
+        width: 90%;
+    }
+
+    .Nombre {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: white;
+        align-items: start;
+    }
+
+    .Pro-imagen {
+        width: 130px;
+        height: 140px;
+        align-items: center;
+        border-radius: 13px;
+    }
+    
+    .Precio {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        color: white;
+    }
+
+    .Box-Precio .Icono {
+        width: 20px;
+    }
+
+
+    .Box-Precio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    
+    /*Pie de pagina*/
+    
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #5D04D9;
+    }
+    
+    .Pie-Pag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400px;
+    } 
+
+    .texto4 {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 200px;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template:
+        "nav nav" 70px
+        "content form" 700px
+        "footer footer" 150px/50% 50%;
+    }
+    
+    /*cabecera*/
+    
+    nav {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5D04D9;
+        box-shadow: 0px 11px 0px 0px rgba(0,0,0,0.74);
+    }
+    
+    /*Form*/
+    
+    main {
+        grid-area: form;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        gap: 70px;
+    }
+    
+    h1 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+    
+    .Box-Inputs {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 80%;
+        height: 80%;
+    }
+
+    input {
+        position: relative;
+        border-radius: 20px;
+        border: solid #03318C;
+        padding: 10px;
+        width: 80%;
+        height: 30px;
+    }
+
+    input::placeholder {
+        font-family: "IBM Plex Mono", monospace;
+        color: #03318C;
+    }
+    
+    
+    .Box-Botones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    
+    button {
+        width: 40%;
+        height: 150%;
+        border-radius: 10px;
+        border: solid #03318C;
+        font-family: "IBM Plex Mono", monospace;
+        cursor: pointer;
+        color: #03318C;
+    }
+
+    .Enviar {
+        width: 40%;
+        height: 150%;
+        border-radius: 10px;
+        border: solid #03318C;
+        font-family: "IBM Plex Mono", monospace;
+        cursor: pointer;
+        color: #03318C;
+    }
+    
+    button:hover {
+        background-color: #03318C;
+        color: white;
+        transition: background-color 0.5s;
+    }
+    
+    /*Productos*/
+    
+    section {
+        grid-area: content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Box-Productos {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Texto1 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin: 35px 0 0 0;
+    }
+    
+    .Producto {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lista-Productos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Producto-Item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        
+    }
+
+    .Productos {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        background-color: #5D04D9;
+        box-shadow: -8px 10px 3px -3px rgba(0,0,0,0.35);
+        border: solid black;
+        border-radius: 23px;
+        width: 150px;
+        height: 200px;
+    }
+
+    .Box-Name {
+        width: 90%;
+    }
+
+    .Nombre {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: white;
+        align-items: start;
+    }
+
+    .Pro-imagen {
+        width: 130px;
+        height: 140px;
+        align-items: center;
+        border-radius: 13px;
+    }
+    
+    .Precio {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        color: white;
+    }
+
+    .Box-Precio .Icono {
+        width: 20px;
+    }
+
+
+    .Box-Precio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    
+    /*Pie de pagina*/
+    
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #5D04D9;
+    }
+    
+    .Pie-Pag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400px;
+    }
+    
+    .texto4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200px;
+}
+}
