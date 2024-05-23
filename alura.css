@@ -76,7 +76,7 @@ input::placeholder {
     width: 70%;
 }
 
-button {
+.btn {
     width: 40%;
     height: 150%;
     border-radius: 10px;
@@ -86,21 +86,12 @@ button {
     color: #03318C;
 }
 
-.Enviar {
-    width: 40%;
-    height: 150%;
-    border-radius: 10px;
-    border: solid #03318C;
-    font-family: "IBM Plex Mono", monospace;
-    cursor: pointer;
-    color: #03318C;
-}
-
-button:hover {
-    background-color: #03318C;
-    color: white;
-    transition: background-color 0.5s;
-}
+    
+.btn:hover {
+     background-color: #03318C;
+     color: white;
+     transition: background-color 0.5s;
+ }
 
 /*Productos*/
 
@@ -309,7 +300,7 @@ footer {
         width: 70%;
     }
     
-    button {
+     .btn {
         width: 40%;
         height: 150%;
         border-radius: 10px;
@@ -319,17 +310,8 @@ footer {
         color: #03318C;
     }
 
-    .Enviar {
-        width: 40%;
-        height: 150%;
-        border-radius: 10px;
-        border: solid #03318C;
-        font-family: "IBM Plex Mono", monospace;
-        cursor: pointer;
-        color: #03318C;
-    }
     
-    button:hover {
+    .btn:hover {
         background-color: #03318C;
         color: white;
         transition: background-color 0.5s;
@@ -537,7 +519,7 @@ footer {
         width: 70%;
     }
     
-    button {
+     .btn {
         width: 40%;
         height: 150%;
         border-radius: 10px;
@@ -547,17 +529,8 @@ footer {
         color: #03318C;
     }
 
-    .Enviar {
-        width: 40%;
-        height: 150%;
-        border-radius: 10px;
-        border: solid #03318C;
-        font-family: "IBM Plex Mono", monospace;
-        cursor: pointer;
-        color: #03318C;
-    }
     
-    button:hover {
+    .btn:hover {
         background-color: #03318C;
         color: white;
         transition: background-color 0.5s;
