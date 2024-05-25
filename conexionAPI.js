@@ -1,11 +1,11 @@
 async function listaProductos(){
-    const conexion = await fetch ("https://alurageek-api-opal.vercel.app/");
+    const conexion = await fetch ("https://alurageek-api-opal.vercel.app/Productos");
     const conexionConvertida = conexion.json();
     return conexionConvertida
 }
 
 async function enviarProducto(nombre,precio,imagen){
-    const conexion = await fetch ("https://alurageek-api-opal.vercel.app/",{
+    const conexion = await fetch ("https://alurageek-api-opal.vercel.app/Productos",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify({
