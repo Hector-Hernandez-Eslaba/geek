@@ -18,9 +18,18 @@
     <main class="Box-In">
         <div class="Titulo"><h1>Agregar <br> Producto:</h1></div>
         <form class="Box-Inputs" data-formulario>
-            <input type="text" required placeholder="nombre..." data-nombre >
-            <input type="text" required placeholder="precio..." data-precio>
-            <input type="text" required placeholder="imagen..." data-imagen>
+            <fieldset class="Box-Relleno">
+                <input type="text" required placeholder="nombre..." data-nombre>
+                <span id="Error-Nombre" class="Error"></span>
+            </fieldset>
+            <fieldset class="Box-Relleno">
+                <input type="text" required placeholder="precio..." data-precio>
+                <span id="Error-Nombre" class="Error"></span>
+            </fieldset>
+            <fieldset class="Box-Relleno">
+                <input type="text" required placeholder="imagen..." data-imagen>
+                <span id="Error-Nombre" class="Error"></span>
+            </fieldset>
             <di class="Box-Botones">
                 <input class="btn" type="submit" value="Enviar">
                 <button class="btn">Limpiar</button>
@@ -52,5 +61,6 @@
     </footer>
     <script src="/mostrarProductos.js" type="module" ></script>
     <script src="/crearProducto.js" type="module"></script>
+    <script src="/formulario.js" type="module"></script>
 </body>
 </html>
