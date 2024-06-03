@@ -25,7 +25,7 @@ async function enviarProducto(nombre,precio,imagen){
 
 async function borrarProducto(id){
     try {
-    const Response = await fetch (`http://localhost:3001/Productos/${id}`,{
+    const Response = await fetch (`https://alurageek-api-opal.vercel.app/Productos/${id}`,{
         method:"DELETE",
         headers: {
             "content-type": "application/json"
