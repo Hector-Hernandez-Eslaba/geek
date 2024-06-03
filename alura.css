@@ -206,6 +206,10 @@ section {
     width: 20px;
 }
 
+.btn_Eliminar {
+    background-color: transparent;
+    border: none;
+}
 
 .Box-Precio {
     display: flex;
@@ -432,6 +436,10 @@ footer {
         width: 20px;
     }
 
+    .btn_Eliminar {
+    background-color: transparent;
+    border: none;
+    }
 
     .Box-Precio {
         display: flex;
@@ -672,6 +680,11 @@ footer {
     .Box-Precio .Icono {
         width: 20px;
     }
+
+    .btn_Eliminar {
+    background-color: transparent;
+    border: none;
+}
 
 
     .Box-Precio {
