@@ -12,7 +12,7 @@ function crearProducto(nombre,precio,imagen){
                             </div>
                             <div class="Box-Precio">
                                 <p class="Precio">${precio}</p>                                
-                                <img class="Icono" src="Imagenes/🦆 icon _trash 2_.png" alt="trash">
+                                <button class="btn_Eliminar" type="button" data-id="${id}"><img class="Icono" src="Imagenes/🦆 icon _trash 2_.png" alt="trash"></button>
                             </div>
                         </div>`;
     return producto;
