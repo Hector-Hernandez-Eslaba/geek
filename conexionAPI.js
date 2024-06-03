@@ -43,5 +43,5 @@ async function borrarProducto(id){
 }
 
 export const conexionAPI = {
-    listaProductos,enviarProducto,borrarProducto
+    listaProductos,enviarProducto,borrarProducto,
 }
