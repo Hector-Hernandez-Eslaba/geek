@@ -2,7 +2,7 @@ import { conexionAPI } from "/conexionAPI.js";
 
 const lista = document.querySelector("[data-lista]")
 
-function crearProducto(nombre,precio,imagen){
+function crearProducto(nombre,precio,imagen,id){
     const producto = document.createElement("li");
     producto.className = "Producto-Item";
     producto.innerHTML=`<div class="Productos">
