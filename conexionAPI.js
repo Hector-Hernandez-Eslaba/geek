@@ -23,6 +23,25 @@ async function enviarProducto(nombre,precio,imagen){
     return conexionConvertida;
 }
 
+async function borrarProducto(id){
+    try {
+    const Response = await fetch (`http://localhost:3001/Productos/${id}`,{
+        method:"DELETE",
+        headers: {
+            "content-type": "application/json"
+        }});
+
+        if (!Response.ok) {
+            throw new Error ("Error al eliminar el producto")
+        }
+
+        return Response;
+    } catch (error){
+        console.error ("Error al eliminar el producto: ${error},");
+    }
+
+}
+
 export const conexionAPI = {
-    listaProductos,enviarProducto
+    listaProductos,enviarProducto,borrarProducto
 }
