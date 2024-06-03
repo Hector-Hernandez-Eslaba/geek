@@ -1,4 +1,4 @@
-import { conexionAPI } from "./conexionAPI.js";
+import { conexionAPI } from "/conexionAPI.js";
 
 console.log("Se subió el archivo borrar Producto");
 
